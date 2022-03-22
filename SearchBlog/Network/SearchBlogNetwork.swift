@@ -8,7 +8,8 @@
 import Foundation
 import RxSwift
 
-enum SearchNetworkError {
+enum SearchNetworkError: Error {
+    case invalidURL
     case invalidJSON
     case networkError
 }
@@ -21,5 +22,27 @@ final class SearchBlogNetwork {
         self.session = session
     }
     
-    func searchBlog(query: String) -> Single<Result<DaumBlog, Swift.Error>>
+    func searchBlog(query: String) -> Single<Result<DaumBlog, SearchNetworkError>> {
+        guard let url = api.searchBlog(query: query).url else {
+            return .just(.failure(.invalidURL))
+        }
+        
+        let request = NSMutableURLRequest(url: url)
+        request.httpMethod = "GET"
+        request.setValue("KakaoAK 44dc62832fb05f23212df94c2946569d", forHTTPHeaderField: "Authorization")
+        
+        return session.rx.data(request: request as URLRequest)
+            .map { data in
+                do {
+                    let blogData = try JSONDecoder().decode(DaumBlog.self, from: data)
+                    return .success(blogData)
+                } catch {
+                    return .failure(.invalidJSON)
+                }
+            }
+            .catch { _ in
+                .just(.failure(.networkError))
+            }
+            .asSingle()
+    }
 }

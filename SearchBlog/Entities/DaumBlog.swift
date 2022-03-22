@@ -8,7 +8,7 @@
 import Foundation
 
 struct DaumBlog: Decodable {
-    let document: [DaumDocument]
+    let documents: [DaumDocument]
 }
 
 struct DaumDocument: Decodable {
@@ -25,9 +25,11 @@ struct DaumDocument: Decodable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: Coningkeys.self)
         
-        self.title = try? values.decode(String?.self, forKey: .title)
+        self.title =  try? values.decode(String?.self, forKey: .title)?
+            .replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
+            .replacingOccurrences(of: "&[^;]+;", with: "", options: .regularExpression, range: nil)
         self.name = try? values.decode(String?.self, forKey: .name)
-        self.thumbnail = try? values.decode(String.self, forKey: .thumbnail)
+        self.thumbnail = try? values.decode(String?.self, forKey: .thumbnail)
         self.datetime = Date.parse(values, key: .datetime)
     }
 }
@@ -35,9 +37,9 @@ struct DaumDocument: Decodable {
 extension Date {
     static func parse<K: CodingKey>(_ values: KeyedDecodingContainer<K>, key: K) -> Date? {
         guard let dateString = try? values.decode(String.self, forKey: key),
-              let date = from(dateString: dateString) else {
-                  return nil
-              }
+            let date = from(dateString: dateString) else {
+            return nil
+        }
         
         return date
     }
@@ -50,7 +52,7 @@ extension Date {
         if let date = dateFormatter.date(from: dateString) {
             return date
         }
-        
+
         return nil
     }
 }
