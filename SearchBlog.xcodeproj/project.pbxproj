@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51F1ECE27ECB83A00D38275 /* SearchBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51F1ECD27ECB83A00D38275 /* SearchBarViewModel.swift */; };
+		E51F1ED027ECBA5B00D38275 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51F1ECF27ECBA5B00D38275 /* FilterViewModel.swift */; };
+		E51F1ED327ECBB1800D38275 /* BlogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51F1ED227ECBB1800D38275 /* BlogListViewModel.swift */; };
+		E51F1ED527ECBC7D00D38275 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51F1ED427ECBC7D00D38275 /* MainViewModel.swift */; };
+		E51F1ED727ECC42800D38275 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51F1ED627ECC42800D38275 /* MainModel.swift */; };
 		E5BC49AB27E5AE6200EC7DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC49AA27E5AE6200EC7DE5 /* AppDelegate.swift */; };
 		E5BC49AD27E5AE6200EC7DE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC49AC27E5AE6200EC7DE5 /* SceneDelegate.swift */; };
 		E5BC49B427E5AE6300EC7DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5BC49B327E5AE6300EC7DE5 /* Assets.xcassets */; };
@@ -19,7 +24,7 @@
 		E5BC49CC27E5AF2500EC7DE5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC49CB27E5AF2500EC7DE5 /* MainViewController.swift */; };
 		E5BC49CE27E5B1A100EC7DE5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC49CD27E5B1A100EC7DE5 /* SearchBar.swift */; };
 		E5BC49D027E5B61500EC7DE5 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC49CF27E5B61500EC7DE5 /* FilterView.swift */; };
-		E5BC49D227E5B9D900EC7DE5 /* BlogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC49D127E5B9D900EC7DE5 /* BlogList.swift */; };
+		E5BC49D227E5B9D900EC7DE5 /* BlogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC49D127E5B9D900EC7DE5 /* BlogListView.swift */; };
 		E5BC49D427E5B9EC00EC7DE5 /* BlogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC49D327E5B9EC00EC7DE5 /* BlogListCell.swift */; };
 		E5BC49D627E5BA0600EC7DE5 /* BlogListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC49D527E5BA0600EC7DE5 /* BlogListCellData.swift */; };
 		E5BC49DF27E5C4EE00EC7DE5 /* AlertActionConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC49DE27E5C4EE00EC7DE5 /* AlertActionConvertible.swift */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E51F1ECD27ECB83A00D38275 /* SearchBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewModel.swift; sourceTree = "<group>"; };
+		E51F1ECF27ECBA5B00D38275 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		E51F1ED227ECBB1800D38275 /* BlogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListViewModel.swift; sourceTree = "<group>"; };
+		E51F1ED427ECBC7D00D38275 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E51F1ED627ECC42800D38275 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		E5BC49A727E5AE6200EC7DE5 /* SearchBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BC49AA27E5AE6200EC7DE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5BC49AC27E5AE6200EC7DE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +48,7 @@
 		E5BC49CB27E5AF2500EC7DE5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E5BC49CD27E5B1A100EC7DE5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		E5BC49CF27E5B61500EC7DE5 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
-		E5BC49D127E5B9D900EC7DE5 /* BlogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogList.swift; sourceTree = "<group>"; };
+		E5BC49D127E5B9D900EC7DE5 /* BlogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListView.swift; sourceTree = "<group>"; };
 		E5BC49D327E5B9EC00EC7DE5 /* BlogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCell.swift; sourceTree = "<group>"; };
 		E5BC49D527E5BA0600EC7DE5 /* BlogListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCellData.swift; sourceTree = "<group>"; };
 		E5BC49DE27E5C4EE00EC7DE5 /* AlertActionConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionConvertible.swift; sourceTree = "<group>"; };
@@ -63,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E51F1ED127ECBA6B00D38275 /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				E5BC49CF27E5B61500EC7DE5 /* FilterView.swift */,
+				E51F1ECF27ECBA5B00D38275 /* FilterViewModel.swift */,
+			);
+			path = FilterView;
+			sourceTree = "<group>";
+		};
 		E5BC499E27E5AE6200EC7DE5 = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				E5BC49DB27E5C2D000EC7DE5 /* SearchBar */,
-				E5BC49DC27E5C2D800EC7DE5 /* BlogListView */,
+				E5BC49DC27E5C2D800EC7DE5 /* ListView */,
 			);
 			path = SubComponents;
 			sourceTree = "<group>";
@@ -125,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				E5BC49CB27E5AF2500EC7DE5 /* MainViewController.swift */,
+				E51F1ED427ECBC7D00D38275 /* MainViewModel.swift */,
+				E51F1ED627ECC42800D38275 /* MainModel.swift */,
 				E5BC49D927E5C28400EC7DE5 /* SubComponents */,
 			);
 			path = MainViewController;
@@ -134,23 +155,25 @@
 			isa = PBXGroup;
 			children = (
 				E5BC49CD27E5B1A100EC7DE5 /* SearchBar.swift */,
+				E51F1ECD27ECB83A00D38275 /* SearchBarViewModel.swift */,
 			);
 			path = SearchBar;
 			sourceTree = "<group>";
 		};
-		E5BC49DC27E5C2D800EC7DE5 /* BlogListView */ = {
+		E5BC49DC27E5C2D800EC7DE5 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				E5BC49D127E5B9D900EC7DE5 /* BlogList.swift */,
+				E5BC49D127E5B9D900EC7DE5 /* BlogListView.swift */,
+				E51F1ED227ECBB1800D38275 /* BlogListViewModel.swift */,
 				E5BC49DD27E5C2F200EC7DE5 /* SubComponents */,
 			);
-			path = BlogListView;
+			path = ListView;
 			sourceTree = "<group>";
 		};
 		E5BC49DD27E5C2F200EC7DE5 /* SubComponents */ = {
 			isa = PBXGroup;
 			children = (
-				E5BC49CF27E5B61500EC7DE5 /* FilterView.swift */,
+				E51F1ED127ECBA6B00D38275 /* FilterView */,
 				E5BC49D327E5B9EC00EC7DE5 /* BlogListCell.swift */,
 			);
 			path = SubComponents;
@@ -247,18 +270,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E51F1ED027ECBA5B00D38275 /* FilterViewModel.swift in Sources */,
 				E5BC49CC27E5AF2500EC7DE5 /* MainViewController.swift in Sources */,
 				E5BC49D427E5B9EC00EC7DE5 /* BlogListCell.swift in Sources */,
-				E5BC49D227E5B9D900EC7DE5 /* BlogList.swift in Sources */,
+				E5BC49D227E5B9D900EC7DE5 /* BlogListView.swift in Sources */,
 				E5BC49D627E5BA0600EC7DE5 /* BlogListCellData.swift in Sources */,
 				E5BC49E327E5D91F00EC7DE5 /* SearchBlogAPI.swift in Sources */,
 				E5BC49E127E5D57C00EC7DE5 /* DaumBlog.swift in Sources */,
+				E51F1ED327ECBB1800D38275 /* BlogListViewModel.swift in Sources */,
 				E5BC49CE27E5B1A100EC7DE5 /* SearchBar.swift in Sources */,
 				E5BC49AB27E5AE6200EC7DE5 /* AppDelegate.swift in Sources */,
 				E5BC49D027E5B61500EC7DE5 /* FilterView.swift in Sources */,
+				E51F1ED727ECC42800D38275 /* MainModel.swift in Sources */,
 				E5BC49AD27E5AE6200EC7DE5 /* SceneDelegate.swift in Sources */,
+				E51F1ECE27ECB83A00D38275 /* SearchBarViewModel.swift in Sources */,
 				E5BC49E627E5DA8B00EC7DE5 /* SearchBlogNetwork.swift in Sources */,
 				E5BC49DF27E5C4EE00EC7DE5 /* AlertActionConvertible.swift in Sources */,
+				E51F1ED527ECBC7D00D38275 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
